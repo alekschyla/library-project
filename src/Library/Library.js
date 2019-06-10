@@ -1,9 +1,12 @@
 import React from 'react';
 import Book from "./Book";
+import Labels from "./Labels";
 
 const Library = (props) => {
     return (
-        <div>
+        <table>
+            <tbody>
+            <Labels/>
             {
                 props.library.length !== 0 &&
                 Object.entries( props.library).map(
@@ -15,7 +18,8 @@ const Library = (props) => {
                     )
                 )
             }
-        </div>
+            </tbody>
+        </table>
     );
 };
 
