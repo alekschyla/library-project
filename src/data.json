@@ -1,32 +1,44 @@
 {
   "library": [
     {
-      "title": "Example 1",
-      "author": "Name Surname"
+      "author": "Chinua Achebe",
+      "title": "Things Fall Apart"
     },
     {
-      "title": "Example 2",
-      "author": "Name Surname"
+      "author": "Hans Christian Andersen",
+      "title": "Fairy tales"
     },
     {
-      "title": "Example 3",
-      "author": "Name Surname"
+      "author": "Dante Alighieri",
+      "title": "The Divine Comedy"
     },
     {
-      "title": "Example 4",
-      "author": "Name Surname"
+      "author": "Jane Austen",
+      "title": "Pride and Prejudice"
     },
     {
-      "title": "Example 5",
-      "author": "Name Surname"
+      "author": "Samuel Beckett",
+      "title": "Molloy"
     },
     {
-      "title": "Example 6",
-      "author": "Name Surname"
+      "author": "Giovanni Boccaccio",
+      "title": "The Decameron"
     },
     {
-      "title": "Example 7",
-      "author": "Name Surname"
+      "author": "Jorge Luis Borges",
+      "title": "Ficciones"
+    },
+    {
+      "author": "Miguel de Cervantes",
+      "title": "Don Quijote De La Mancha"
+    },
+    {
+      "author": "Geoffrey Chaucer",
+      "title": "The Canterbury Tales"
+    },
+    {
+      "author": "Anton Chekhov",
+      "title": "Stories"
     }
   ]
 }
