@@ -2,43 +2,53 @@
   "library": [
     {
       "author": "Chinua Achebe",
-      "title": "Things Fall Apart"
+      "title": "Things Fall Apart",
+      "id": "8sjy63nj8s"
     },
     {
       "author": "Hans Christian Andersen",
-      "title": "Fairy tales"
+      "title": "Fairy tales",
+      "id": "nsj74b5l2a"
     },
     {
       "author": "Dante Alighieri",
-      "title": "The Divine Comedy"
+      "title": "The Divine Comedy",
+      "id": "0dk63bg57s"
     },
     {
       "author": "Jane Austen",
-      "title": "Pride and Prejudice"
+      "title": "Pride and Prejudice",
+      "id": "h35s0j7vs2"
     },
     {
       "author": "Samuel Beckett",
-      "title": "Molloy"
+      "title": "Molloy",
+      "id": "7dhb53sk9q"
     },
     {
       "author": "Giovanni Boccaccio",
-      "title": "The Decameron"
+      "title": "The Decameron",
+      "id": "l98stgb38h"
     },
     {
       "author": "Jorge Luis Borges",
-      "title": "Ficciones"
+      "title": "Ficciones",
+      "id": "h6d7j23hsy"
     },
     {
       "author": "Miguel de Cervantes",
-      "title": "Don Quijote De La Mancha"
+      "title": "Don Quijote De La Mancha",
+      "id": "g16qpg5xh9"
     },
     {
       "author": "Geoffrey Chaucer",
-      "title": "The Canterbury Tales"
+      "title": "The Canterbury Tales",
+      "id": "7hnsp02b5v"
     },
     {
       "author": "Anton Chekhov",
-      "title": "Stories"
+      "title": "Stories",
+      "id": "dd72bga4c9"
     }
   ]
 }

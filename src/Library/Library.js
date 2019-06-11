@@ -13,7 +13,9 @@ const Library = (props) => {
                     ([id, book]) => (
                         <Book
                             book={book}
-                            key={id}
+                            key={book.id}
+                            deleteBook={props.deleteBook}
+                            editBook={props.editBook}
                         />
                     )
                 )

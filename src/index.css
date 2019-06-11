@@ -1,8 +1,34 @@
+table {
+    background-color: #244c8c;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px grey;
+}
+
 th {
     text-align: left;
     padding-bottom: 10px;
+    color: indianred;
+    font-size: 18px;
 }
 tr, td {
     padding-right: 30px;
     padding-bottom: 10px;
+}
+
+button {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 2px 2px 4px black;
+}
+button:focus {
+    outline:0;
 }
