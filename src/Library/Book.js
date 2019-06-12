@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Book = ({book, deleteBook, editBook}) => {
     return (
@@ -6,10 +7,16 @@ const Book = ({book, deleteBook, editBook}) => {
             <td>{book.title}</td>
             <td>{book.author}</td>
             <td>
-                <button
-                    onClick={() => editBook(book)}
-                >
-                    edytuj
+                <button>
+                    <Link
+                        className={"link"}
+                        to={{
+                            pathname: `/book/${book.id}`,
+                            state: { book: book }
+                        }}
+                    >
+                        edytuj
+                    </Link>
                 </button>
             </td>
             <td>

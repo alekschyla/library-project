@@ -3,12 +3,16 @@ import data from '../data.json'
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {setLibraryAsyncActionCreator,
-    deleteBookActionCreator} from '../state/library'
+    deleteBookActionCreator,
+    isLibrarySetActionCreator} from '../state/library'
 import Library from "../Library/Library";
 
 class Dashboard extends Component {
     componentDidMount() {
-        this.props._setLibrary(data.library);
+        if (!this.props._isLibrarySet) {
+            this.props._setLibrary(data.library);
+            this.props._setIsLibrarySet();
+        }
     }
 
     editBook = (book) => {
@@ -30,11 +34,13 @@ class Dashboard extends Component {
 
 const mapStateToProps = state => ({
     _library: state.library.library,
+    _isLibrarySet: state.library.isLibrarySet
 });
 
 const mapDispatchToProps = dispatch => ({
     _setLibrary: (library) => dispatch(setLibraryAsyncActionCreator(library)),
-    _deleteBook: (bookId) => dispatch(deleteBookActionCreator(bookId))
+    _deleteBook: (bookId) => dispatch(deleteBookActionCreator(bookId)),
+    _setIsLibrarySet: () => dispatch(isLibrarySetActionCreator())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
