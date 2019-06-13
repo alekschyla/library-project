@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const Book = ({book, deleteBook, editBook}) => {
+const Book = ({book, deleteBook}) => {
     return (
         <tr>
             <td data-th="Title"> {book.title}</td>
@@ -15,7 +15,7 @@ const Book = ({book, deleteBook, editBook}) => {
                             state: {book: book}
                         }}
                     >
-                        edytuj
+                        edit
                     </Link>
                 </button>
             </td>
@@ -23,7 +23,7 @@ const Book = ({book, deleteBook, editBook}) => {
                 <button
                     onClick={() => deleteBook(book.id)}
                 >
-                    usuń
+                    delete
                 </button>
             </td>
         </tr>

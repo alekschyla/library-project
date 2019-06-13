@@ -20,7 +20,9 @@ class EditBook extends Component {
         const bookId = this.props.location.state.book.id;
         const bookTitle = this.state.newTitle;
         const bookAuthor = this.state.newAuthor;
+
         this.props._editBook(bookId, bookTitle, bookAuthor);
+
         this.props.history.push('/')
     };
 

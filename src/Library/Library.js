@@ -2,20 +2,19 @@ import React from 'react';
 import Book from "./Book";
 import Labels from "./Labels";
 
-const Library = (props) => {
+const Library = ({library, deleteBook}) => {
     return (
         <table>
             <tbody>
             <Labels/>
             {
-                props.library.length !== 0 &&
-                Object.entries(props.library).map(
-                    ([id, book]) => (
+               library.length !== 0 &&
+                library.map(
+                    book => (
                         <Book
                             book={book}
                             key={book.id}
-                            deleteBook={props.deleteBook}
-                            editBook={props.editBook}
+                            deleteBook={deleteBook}
                         />
                     )
                 )

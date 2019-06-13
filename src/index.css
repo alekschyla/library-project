@@ -87,7 +87,6 @@ label {
     color: black;
 }
 
-
 @media only screen and (max-width: 768px) {
     .edit-book--container {
         width: 90vw;
