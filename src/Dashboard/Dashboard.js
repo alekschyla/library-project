@@ -18,13 +18,11 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div>
-                <Library
-                    library={this.props._library}
-                    deleteBook={this.props._deleteBook}
-                    editBook={this.editBook}
-                />
-            </div>
+            <Library
+                library={this.props._library}
+                deleteBook={this.props._deleteBook}
+                editBook={this.editBook}
+            />
         );
     }
 }

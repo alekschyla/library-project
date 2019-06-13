@@ -2,14 +2,11 @@ const SET_LIBRARY = 'library/SET_LIBRARY';
 const DELETE_BOOK = 'library/DELETE_BOOK';
 const EDIT_BOOK = 'library/EDIT_BOOK';
 
-export const setLibraryAsyncActionCreator = (library) => (dispatch, getState) => {
-    dispatch(setLibraryActionCreator(library));
-};
-
 export const setLibraryActionCreator = (library) => ({
     type: SET_LIBRARY,
     library
 });
+
 export const deleteBookActionCreator = (bookId) => ({
     type: DELETE_BOOK,
     bookId
@@ -20,6 +17,10 @@ export const editBookActionCreator = (bookId, newTitle, newAuthor) => ({
     newTitle,
     newAuthor
 });
+
+export const setLibraryAsyncActionCreator = (library) => (dispatch, getState) => {
+    dispatch(setLibraryActionCreator(library));
+};
 
 const initialState = {
     library: [],
