@@ -1,5 +1,4 @@
 const SET_LIBRARY = 'library/SET_LIBRARY';
-const IS_LIBRARY_SET = 'library/IS_LIBRARY_SET';
 const DELETE_BOOK = 'library/DELETE_BOOK';
 const EDIT_BOOK = 'library/EDIT_BOOK';
 
@@ -10,9 +9,6 @@ export const setLibraryAsyncActionCreator = (library) => (dispatch, getState) =>
 export const setLibraryActionCreator = (library) => ({
     type: SET_LIBRARY,
     library
-});
-export const isLibrarySetActionCreator = () => ({
-    type: IS_LIBRARY_SET,
 });
 export const deleteBookActionCreator = (bookId) => ({
     type: DELETE_BOOK,
@@ -27,7 +23,6 @@ export const editBookActionCreator = (bookId, newTitle, newAuthor) => ({
 
 const initialState = {
     library: [],
-    isLibrarySet: false,
 };
 
 export default (state = initialState, action) => {
@@ -37,11 +32,6 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 library: action.library
-            };
-        case IS_LIBRARY_SET:
-            return {
-                ...state,
-                isLibrarySet: true
             };
         case DELETE_BOOK:
             return {

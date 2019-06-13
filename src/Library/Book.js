@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom'
 const Book = ({book, deleteBook, editBook}) => {
     return (
         <tr>
-            <td>{book.title}</td>
-            <td>{book.author}</td>
+            <td data-th="Title"> {book.title}</td>
+            <td data-th="Author"> {book.author}</td>
             <td>
                 <button>
                     <Link
-                        className={"link"}
+                        className={"book--link"}
                         to={{
                             pathname: `/book/${book.id}`,
-                            state: { book: book }
+                            state: {book: book}
                         }}
                     >
                         edytuj

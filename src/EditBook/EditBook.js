@@ -24,13 +24,13 @@ class EditBook extends Component {
         this.props.history.push('/')
     };
 
-    goBack = ()=> {
+    goBack = () => {
         this.props.history.goBack();
     };
 
     render() {
         return (
-            <div className={"edit"}>
+            <div className={"edit-book--container"}>
                 <div>
                     <label>
                         Title:
@@ -51,12 +51,12 @@ class EditBook extends Component {
                     <button
                         onClick={this.save}
                     >
-                        zapisz
+                        save
                     </button>
                     <button
                         onClick={this.goBack}
                     >
-                        anuluj
+                        cancel
                     </button>
                 </div>
             </div>
@@ -65,9 +65,7 @@ class EditBook extends Component {
 }
 
 
-const mapStateToProps = state => ({
-
-});
+const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
     _editBook: (bookId, newTitle, newAuthor) => dispatch(editBookActionCreator(bookId, newTitle, newAuthor))

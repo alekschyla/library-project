@@ -9,7 +9,7 @@ const Library = (props) => {
             <Labels/>
             {
                 props.library.length !== 0 &&
-                Object.entries( props.library).map(
+                Object.entries(props.library).map(
                     ([id, book]) => (
                         <Book
                             book={book}
