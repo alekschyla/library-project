@@ -49,13 +49,15 @@ class EditBook extends Component {
                         />
                     </label>
                 </div>
-                <div>
+                <div className={"edit-book--buttons"}>
                     <button
+                        className={"edit-book--button"}
                         onClick={this.save}
                     >
                         save
                     </button>
                     <button
+                        className={"edit-book--button"}
                         onClick={this.goBack}
                     >
                         cancel

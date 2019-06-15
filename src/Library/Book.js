@@ -7,7 +7,7 @@ const Book = ({book, deleteBook}) => {
             <td data-th="Title"> {book.title}</td>
             <td data-th="Author"> {book.author}</td>
             <td>
-                <button>
+                <button className={"book--button button--button__edit"}>
                     <Link
                         className={"book--link"}
                         to={{
@@ -21,6 +21,7 @@ const Book = ({book, deleteBook}) => {
             </td>
             <td>
                 <button
+                    className={"book--button button--button__delete"}
                     onClick={() => deleteBook(book.id)}
                 >
                     delete

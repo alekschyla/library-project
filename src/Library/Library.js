@@ -5,8 +5,8 @@ import Labels from "./Labels";
 const Library = ({library, deleteBook}) => {
     return (
         <table>
-            <tbody>
             <Labels/>
+            <tbody>
             {
                library.length !== 0 &&
                 library.map(

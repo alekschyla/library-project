@@ -8,42 +8,37 @@ body {
 }
 
 table {
-    background-color: #244c8c;
-    color: white;
-    padding: 10px;
+    border-spacing: 1;
+    border-collapse: collapse;
+    background-color: #C6DBE8;
+    color: #42667E;
     font-family: sans-serif;
-    border-radius: 10px;
     margin: 10px auto;
     box-shadow: 2px 2px 5px grey;
 }
 
 th {
     text-align: left;
-    padding: 10px 0 10px 10px;
-    color: indianred;
+    padding: 10px;
+    color: white;
     font-size: 18px;
 }
 
-tr, td {
-    padding: 0 10px 10px 10px;
+tbody tr {
+    border-bottom: 1px solid #42667E;
 }
 
-th, td:before {
-    color: indianred;
+tr:last-child {
+    border: 0;
+}
+
+td {
+    padding: 10px;
+}
+
+td:before {
+    color: #17415C;
     font-weight: bold;
-}
-
-button {
-    background: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 5px;
-}
-
-button:hover {
-    box-shadow: 2px 2px 4px black;
 }
 
 button:focus {
@@ -66,31 +61,50 @@ input:focus {
 
 }
 
-label {
-    color: white;
-    text-transform: uppercase;
-    font-family: sans-serif;
+.labels--labels {
+    padding: 5px;
+    background-color: #17415C;
+    border: none;
+    border-radius: 20px;
 }
 
 .edit-book--container {
-    width: 600px;
+    width: 500px;
     margin: 10px auto;
     border-radius: 10px;
-    background: #244c8c;
+    background: #C6DBE8;
+    color: #17415C;
+    text-transform: uppercase;
+    font-family: sans-serif;
     padding: 10px;
     text-align: center;
     box-shadow: 2px 2px 5px grey;
 }
 
-.book--link {
-    text-decoration: none;
-    color: black;
+.edit-book--buttons {
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
-@media only screen and (max-width: 768px) {
-    .edit-book--container {
-        width: 90vw;
-    }
+.book--button, .edit-book--button {
+    background: #42667E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.book--button:hover, .edit-book--button:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.book--link {
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (max-width: 576px) {
@@ -100,6 +114,15 @@ label {
 
     td {
         display: block;
+        padding: 5px;
+    }
+
+    td:nth-child(1) {
+        padding-top: 10px;
+    }
+
+    td:nth-child(3), td:nth-child(4) {
+        padding-bottom: 10px;
     }
 
     tr {
@@ -111,8 +134,23 @@ label {
     }
 
     td:nth-child(1):before, td:nth-child(2):before {
-     content: attr(data-th)":";
-     display: inline-block;
+        content: attr(data-th) ":";
+        display: inline-block;
     }
 
+    .edit-book--container {
+        width: 90vw;
+    }
+
+    .edit-book--buttons {
+        flex-direction: column;
+    }
+
+    .edit-book--button {
+        width: 100%;
+    }
+
+    .edit-book--button:first-child {
+        margin-bottom: 5px;
+    }
 }
