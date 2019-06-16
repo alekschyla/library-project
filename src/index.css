@@ -108,6 +108,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 576px) {
+    table {
+        width: 70vw;
+    }
     th {
         display: none;
     }
@@ -152,5 +155,11 @@ input:focus {
 
     .edit-book--button:first-child {
         margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    table {
+        width: 90vw;
     }
 }
