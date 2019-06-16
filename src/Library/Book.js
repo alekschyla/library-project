@@ -7,17 +7,16 @@ const Book = ({book, deleteBook}) => {
             <td data-th="Title"> {book.title}</td>
             <td data-th="Author"> {book.author}</td>
             <td>
-                <button className={"book--button button--button__edit"}>
-                    <Link
-                        className={"book--link"}
-                        to={{
-                            pathname: `/book/${book.id}`,
-                            state: {book: book}
-                        }}
-                    >
-                        edit
+                <Link
+                    className={"book--link"}
+                    to={{
+                        pathname: `/book/${book.id}`,
+                        state: {book: book}
+                    }}
+                >
+                    <button className={"book--button button--button__edit"}>edit</button>
+
                     </Link>
-                </button>
             </td>
             <td>
                 <button

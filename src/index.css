@@ -71,7 +71,6 @@ input:focus {
 .edit-book--container {
     width: 500px;
     margin: 10px auto;
-    border-radius: 10px;
     background: #C6DBE8;
     color: #17415C;
     text-transform: uppercase;
@@ -100,6 +99,7 @@ input:focus {
 
 .book--button:hover, .edit-book--button:hover {
     box-shadow: 0 0 5px black;
+    cursor: pointer;
 }
 
 .book--link {
